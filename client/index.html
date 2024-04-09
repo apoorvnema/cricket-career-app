@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Career App</title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+    <h2>Player Information</h2>
+    <!-- Form to add player information -->
+    <form id="playerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" required>
+
+        <label for="photoUrl">Photo URL:</label>
+        <input type="url" id="photoUrl" name="photoUrl" required>
+
+        <label for="birthplace">Birthplace:</label>
+        <input type="text" id="birthplace" name="birthplace" required>
+
+        <label for="career">Career:</label>
+        <input type="text" id="career" name="career" required>
+
+        <label for="matches">Number of Matches:</label>
+        <input type="number" id="matches" name="matches" required>
+
+        <label for="score">Score:</label>
+        <input type="number" id="score" name="score" required>
+
+        <label for="fifties">Fifties:</label>
+        <input type="number" id="fifties" name="fifties" required>
+
+        <label for="centuries">Centuries:</label>
+        <input type="number" id="centuries" name="centuries" required>
+
+        <label for="wickets">Wickets:</label>
+        <input type="number" id="wickets" name="wickets" required>
+
+        <label for="average">Average:</label>
+        <input type="number" id="average" name="average" step="0.01" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Search Bar -->
+    <div id="searchBar">
+        <input type="text" id="searchPlayer" placeholder="Search player...">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Hidden section to display player information -->
+    <section id="playerInfo" class="hiddenInfo">
+        <h3>Player Information</h3>
+        <p><strong>Name:</strong> <span id="playerName"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="playerDOB"></span></p>
+        <p><strong>Photo:</strong> <span id="playerPhotoUrl"></span></p>
+        <p><strong>Birthplace:</strong> <span id="playerBirthplace"></span></p>
+        <p><strong>Career:</strong> <span id="playerCareer"></span></p>
+        <p><strong>Number of Matches:</strong> <span id="playerMatches"></span></p>
+        <p><strong>Score:</strong> <span id="playerScore"></span></p>
+        <p><strong>Fifties:</strong> <span id="playerFifties"></span></p>
+        <p><strong>Centuries:</strong> <span id="playerCenturies"></span></p>
+        <p><strong>Wickets:</strong> <span id="playerWickets"></span></p>
+        <p><strong>Average:</strong> <span id="playerAverage"></span></p>
+        <button id="editPlayerBtn">Edit</button>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="public/js/index.js"></script>
+
+</html>
